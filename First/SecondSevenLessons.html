@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    // Eingh lessons 
+        var person;
+
+        if(confirm("Are you sure?")) {
+            person = prompt("Hi, what's yout name?") // input field
+            alert("Hello, " + person);
+        } else
+            alert("Person not sure");
+        
+    // ninth; array 
+
+        var arr = new Array("str", 1.23, 7, false);
+        for(var i = 0; i < arr.length; i++) 
+            document.write(arr[i] + "<br />");
+        
+        arr = new Array();
+        for (i = 0; i < 10; i++) {
+            arr[i] = 1 * 3;
+            document.write(arr[i] + "<br />");
+        }
+        for (i = 0; i < arr.length; i++) 
+            summ += arr[i];
+            document.write("Summ = " + summ);
+
+    
+    // ten lessons theme: many array
+    var arr_1 = new Array();
+    var arr_2 = new Array();
+    var arr_3 = new Array();
+    for(var i = 0; i < 5; i++) arr_1[i] = i;
+    for(var i = 0; i < 10; i++) arr_2[i] = i;
+    for(var i = 0; i < 15; i++) arr_3[i] = i;
+
+    var arr = new Array(arr_1,arr_2,arr_3);
+
+    for (var x = 0; x < arr.length; x++) {
+        for(var j = 0; j < arr[x].length; j++) 
+            document.write(arr[x][j] + " ");
+        document.write("<br />");
+    }
+
+    // eleven lessons; Theme: Function
+
+    var summ;
+
+    function print (text) {
+        document.write("Hello,<br /> World!");
+    }
+
+    function count (x, y) {
+        summ = x + y;
+    }
+
+    print();
+    count(5,7);
+
+    // twelve lessons; Theme: Global variable, Local variable;
+
+    var global = 12;
+    var i = 10;
+
+    function test () {
+        global++;
+        var i = 5;
+    }
+
+    test();
+    document.write("Global - " + global + ", variable i - " + i);
+ 
+    // thirteen lessons; Events and event handler
+    // next ThirdSevenLessons
+
+
+
+    </script>
+</body>
+</html>

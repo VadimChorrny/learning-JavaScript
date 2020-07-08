@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" href="JavaScript.js"></script>
+</head>
+<body>
+    <script type="text/javascript"> // first, second, third.
+    document.write("Hello,World!");
+    document.write("<br />I am, Vadim Chorrny");
+
+    // fourth exercise
+
+    var number = 21;
+    var string;
+    string = "Hello,world!";
+    var floatNumber = 1.23;
+
+    var isTrue;
+    isTrue = true;
+
+    document.write("Variable number = " + number + "<br />" + string + floatNumber + isTrue);
+    
+    // Fifth exercise; Theme: Mathematics
+
+    var x = 5;
+    var y;
+    var result;
+    y = 12;
+    result = x + y;
+    document.write(result);
+    result *= x;
+    document.write("<br />" + result);
+    result++; // ++ is increment, -- is decrement
+    document.write("<br />" + result);
+
+    // sixth exercise; Theme: if,else if, else.
+    
+    var x = 4;
+    var y = 5;
+    if (x == y) {
+        document.write("x != y");
+        document.write("<br />");
+        document.write("4 < 5");
+    }
+    var x = 4;
+    var y = 5;
+    if (x > y)
+        document.write("x > y");
+    else if (x == y)
+        document.write("x == y");
+    else
+        document.write("x < y");
+
+    var result = 5;
+    switch(result) {
+        case 1: document.write("result = 1"); break;
+        case 2: document.write("result = 2"); break;
+        case 3: document.write("result = 3"); break;
+        case 4: document.write("result = 4"); break;
+        default: document.write("result > 4");
+    }
+    document.write("<br />");
+    x > y ? document.write("YES") : document.write("NO");
+
+    // seven exercise; Theme: While,For
+
+    var i;
+    for(var i = 0; i < 10; i++) {                   // var - here as int in C ++
+        document.write(i + "<br />");
+        if(i % 3 == 0 && i != 0) continue;
+        if(i == 8) break;
+        document.write(i + "Hello!<br />");
+    }
+
+    var x = 0;
+
+    while(x < 10) {
+        document.write(x + "<br />");
+        x += 2;
+    }
+
+    var y = 1000;
+
+    do {
+        document.write("The cycle worked");
+    }while(y < 100);
+
+    </script>
+</body>
+</html>
