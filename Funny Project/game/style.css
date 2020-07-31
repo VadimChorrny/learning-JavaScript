@@ -1,0 +1,38 @@
+body{
+    background-color: burlywood;
+    font-family: 'Press Start 2P', cursive;
+}
+.logo
+{
+    border: 10px solid darkorange;
+    padding: 10px;
+    color: fuchsia;
+    text-align: center;
+    font-size: 15px;
+    background-color: beige;
+}
+
+.logo_second{
+    margin-top: 3em;
+    background-color: burlywood;
+    border: 10 px solid darkgoldenrod;
+    padding: 10px;
+    text-align: center;
+}
+
+.description{
+    text-align: center;
+}
+
+.button{
+    text-align: center;
+}
+
+.knopki{
+    text-align: center;
+    border: 3px solid deeppink;
+    margin-top: 2em;
+    padding: 10px;
+    background-color: darksalmon;
+    color: darkorchid;
+}
