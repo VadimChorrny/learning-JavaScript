@@ -1,73 +1,98 @@
-// Theme Логические операторы
+// Theme Условный оператор 
 
-// В JavaScript есть три логических оператора: || (ИЛИ), && (И) и ! (НЕ)
+// >, <, >=, <=, ==, === , !=, !==
 
-// Оператор «ИЛИ» выглядит как двойной символ вертикальной черты:
+let value;
 
-// result = a || b;
+value = 1 > 2;
+value = 1 <= 2;
+value = 1 == 1;
+value = 1 === '1';
+value = 1 != '1';
+value = 1 !== '1';
+value = 'a' == 'A';
+value = 'a'.charCodeAt(); // показує яке число в букви
 
-// тру буде завжди якщо він присутній
+console.log(value);
 
-alert( true || true );   // true
-alert( false || true );  // true
-alert( true || false );  // true
-alert( false || false ); // false
+value = 10;
 
-// Обычно оператор || используется в if для проверки истинности любого из заданных условий.
-
-// К примеру:
-
-let hour = 9;
-
-if (hour < 10 || hour > 18) {
-  alert( 'Офис закрыт.' );
+if (value === 10) {
+    console.log('value: 10');
+} else {
+    console.log('else');
 }
 
-// Mожно передать и больше условий:
+value = null;
 
-let hour = 12;
-let isWeekend = true;
+if (value) {
+    console.log('some actions');
+} else {
+    console.log('else', value);
+}
 
-if (hour < 10 || hour > 18 || isWeekend) {
-  alert( 'Офис закрыт.' ); // это выходной
+// || && !
+
+value = null;
+
+if (value === null) {
+    console.log(value);
 }
 
 
-// ИЛИ «||» находит первое истинное значение
+value = [];
 
-lert( 1 || 0 ); // 1
-alert( true || 'no matter what' ); // true
-
-alert( null || 1 ); // 1 (первое истинное значение)
-alert( null || 0 || 1 ); // 1 (первое истинное значение)
-alert( undefined || null || 0 ); // 0 (поскольку все ложно, возвращается последнее значение)
-
-let currentUser = null;
-let defaultUser = "John";
-
-let name = currentUser || defaultUser || "unnamed";
-
-alert( name ); // выбирается "John" – первое истинное значение
-
-// && (i)
-
-// result = a && b;
-// В традиционном программировании И возвращает true, если оба аргумента истинны, а иначе – false:
-
-alert( true && true );   // true
-alert( false && true );  // false
-alert( true && false );  // false
-alert( false && false ); // false
-// Пример с if:
-
-let hour = 12;
-let minute = 30;
-
-if (hour == 12 && minute == 30) {
-  alert( 'The time is 12:30' );
+if (Array.isArray(value)) { // ask .length
+    console.log(value);
+} else {
+    console.log('array is empty');
 }
-// Как и в случае с ИЛИ, любое значение допускается в качестве операнда И:
 
-if (1 && 0) { // вычисляется как true && false
-  alert( "не сработает, так как результат ложный" );
+let user = {
+    name: 'Vadim'
+};
+
+if (user.hasOwnProperty) { // ask   // щоб не писати user.name можна написати .hasOwnProperty
+    console.log(user.name);
+} else {
+    console.log('else');
 }
+
+// || &&
+
+value = 1 || 0; // || или 
+let age = 10;
+
+if (age < 16 || age > 65) {
+    console.log('good');
+} else {
+    console.log('else');
+}
+
+let serverNickName = 'Vadim';
+let nickname = serverNickName || 'default nickname';
+
+console.log(nickname); 
+
+value = 1 && 0 && 3;
+// && <-- завжди вертає false
+productPrice = 10;
+
+if (productPrice >= 5 && productPrice <= 20) {
+    console.log('beru');
+} else {
+    console.log('else');
+}
+
+console.log(value);
+
+value = 10;
+if (value < 10){
+    console.log('value < 10', value);
+} else if (value >= 10) {
+    console.log('value >= 10', value);
+} else {
+    console.log('else');
+}
+
+
